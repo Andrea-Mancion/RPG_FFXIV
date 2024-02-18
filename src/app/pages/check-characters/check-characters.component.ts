@@ -11,7 +11,14 @@ import { OnInit } from '@angular/core';
 })
 export class CheckCharactersComponent implements OnInit{
 
+  constructor(private router: Router) {
+  }
+
   ngOnInit(): void {
       console.log('CheckCharactersComponent');
+  }
+
+  goToCharacters(characters: string) {
+    this.router.navigate(['/' + characters]);
   }
 }

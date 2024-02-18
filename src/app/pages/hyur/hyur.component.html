@@ -1,0 +1,28 @@
+<div>
+    <div class="flex flex-col justify-center items-center">
+        <p class="text-bold text-5xl">Hyurs</p>
+    </div>
+    <div *ngIf="midlanders" class="flex items-center">
+        <div>
+            <img src="../../../assets/Race_-_Hyur.png">
+        </div>
+        <div>
+            <p>The Midlander clan comprises over half of Eorzea's total Hyur population. The name derives from the clan's long tradition of settling in low-lying regions, though in truth Midlander lines hail from a wide variety of ancestral homelands. They have established themselves in every city throughout the realm, and can be observed leading lives as diverse as their heritage.</p>
+        </div>
+    </div>
+    <div *ngIf="highlanders" class="flex items-center">
+        <div>
+            <img src="../../../assets/raceHyur.png">
+        </div>
+        <div>
+            <p>The Highlander name comes from the clan's history of dominion over the mountains of Gyr Abania. Compared to their Midlander brethren, the Highlanders are noticeably larger in build and musculature. Following the fall of their ancestral homeland of Ala Mhigo, many have sought refuge in the bustling mercantile nation of Ul'dah.</p>
+        </div>
+    </div>
+    <div>
+        <p>Over the course of some one thousand years and three great migratory waves, the Hyur have come to be the most populous of the civilized races in Eorzea. Compared to the others, theirs is an average physique, both in terms of height and build. The Hyur champion personal freedom and liberty, and their espousal of an eclectic variety of languages and traditions is a legacy of their diverse heritage―as is their resulting lack of a unified cultural identity.</p>
+    </div>
+    <div class="flex justify-around">
+            <button class="px-4 py-2 bg-purple-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300" (click)="midlandersShow()">Midlanders</button>
+            <button class="px-4 py-2 bg-purple-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300" (click)="highlandersShow()">Highlanders</button>
+    </div>
+</div>
